@@ -1,7 +1,7 @@
 # FedBM
 Code for our papers: 
 - Stealing Knowledge from Pre-trained Language Models for Federated Classifier Debiasing, MICCAI 2024 (Early Accept) 
-- FedBM: Stealing Knowledge from Pre-trained Language Models for Heterogeneous Federated Learning, MedIA 2025, under review
+- FedBM: Stealing Knowledge from Pre-trained Language Models for Heterogeneous Federated Learning, MedIA 2025
 
 Federated learning (FL) has shown great potential in medical image computing since it provides a decentralized learning paradigm that allows multiple clients to train a model collaboratively without privacy leakage. However, current studies have shown that data heterogeneity incurs local learning bias in classifiers and feature extractors of client models during local training, leading to the performance degradation of a federation system. To address these issues, we propose a novel framework called Federated Bias eliMinating (FedBM) to get rid of local learning bias in heterogeneous federated learning (FL), which mainly consists of two modules, i.e., Linguistic Knowledge-based Classifier Construction (LKCC) and Concept-guided Global Distribution Estimation (CGDE). Specifically, LKCC exploits class concepts, prompts and pre-trained language models (PLMs) to obtain concept embeddings. These embeddings are used to estimate the latent concept distribution of each class in the linguistic space. Based on the theoretical derivation, we can rely on these distributions to pre-construct a high-quality classifier for clients to achieve classification optimization, which is frozen to avoid classifier bias during local training. CGDE samples probabilistic concept embeddings from the latent concept distributions to learn a conditional generator to capture the input space of the global model. Three regularization terms are introduced to improve the quality and utility of the generator. The generator is shared by all clients and produces pseudo data to calibrate updates of local feature extractors.
 
@@ -75,6 +75,14 @@ If you find our work useful in your research or publication, please cite our wor
   author={Zhu, Meilu and Yang, Qiushi and Gao, Zhifan and Liu, Jun and Yuan, Yixuan},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
   year={2024}
+}
+```
+```
+@inproceedings{2024Stealing,
+  title={FedBM: Stealing Knowledge from Pre-trained Language Models for Heterogeneous Federated Learning},
+  author={Zhu, Meilu and Yang, Qiushi and Gao, Zhifan and Liu, Jun and Yuan, Yixuan},
+  booktitle={Medical Image Analysis},
+  year={2025}
 }
 ```
 
