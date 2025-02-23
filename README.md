@@ -78,7 +78,7 @@ If you find our work useful in your research or publication, please cite our wor
 }
 ```
 ```
-@inproceedings{2024Stealing,
+@inproceedings{2025FedBM,
   title={FedBM: Stealing Knowledge from Pre-trained Language Models for Heterogeneous Federated Learning},
   author={Zhu, Meilu and Yang, Qiushi and Gao, Zhifan and Liu, Jun and Yuan, Yixuan},
   booktitle={Medical Image Analysis},
